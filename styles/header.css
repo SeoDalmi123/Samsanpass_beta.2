@@ -1,0 +1,168 @@
+@keyframes headerLoadTransition{
+    from {
+    
+        transform: translateY(-100px);
+    }
+    to {
+    
+        transform: translateY(0);
+    }
+}
+
+
+.header{
+    height: 90px;
+    width: 100%;
+    background-color: #000235;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.36);
+    position: fixed;
+    animation: headerLoadTransition 0.6s ease-in-out;
+}
+.navbarcont{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1450px;
+    gap:660px;
+}
+
+
+/***Logo and SamSan Style***/
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    cursor:pointer;
+    
+}
+
+h1{
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    
+    cursor: pointer;
+    
+}
+
+h1:hover {
+    font-size: 40px;
+    text-indent: 10px;
+}
+
+/***Logo and SamSan Style***/
+
+
+
+
+
+
+
+
+.right{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap:50px;
+    width: auto;
+}
+
+/***Navigation bar style***/
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:50px;
+    font-size: 18px;
+    list-style: none;
+    
+    letter-spacing: 2px;
+    position: relative;
+}
+
+li {
+    font-size: 18px;
+    list-style: none;
+    
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #919191;
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/***Navigation bar style***/
+
+
+
+
+
+
+
+
+
+
+
+/****login button***/
+.login{
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+   
+    
+    color: rgb(4, 196, 4);
+}
+.login:hover{
+    background-color: green;
+    padding: 7px 10px;
+    border-radius: 15px;
+    color: white;
+}
+/****login button***/
+
+
+/**Add link***/
+.addext{
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+    transition: 0.3s;
+    
+
+}
+
+.addext:hover{
+    background-color: green;
+    padding: 7px 10px;
+    border-radius: 15px;
+
+}

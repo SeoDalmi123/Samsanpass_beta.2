@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "images/logo.png"  class="icon" type = "image/x-icon">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel = "icon" href = "images/logo.png"  class="icon" type = "image/x-icon">
+    
+    <!-- ===== CSS Styles===== -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navihead.css">
+</head>
+
+
+<body>
+    <!----------------------------NAVIGATION--------------------->
+    <div class="navheader">
+        <div class="navbarcont">
+        <div class="left">
+        <img src="./images/logo.png" class="navlogo">
+        <h1><a href="index.html" class="samsan">SAM SAN'S PASS</a></h1>
+        </div>
+
+        <div class="right">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./pages/features.html">Features</a></li>
+                    <li><a href="./pages/helpcontactpage.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <!----------------------------Login Form--------------------->
+    <div class="bigcontainer">
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <!-- <div class="header">
+                    
+                        <img src="./images/logo.png" class="logo">
+                        <h1>Sam San's Pass</h1>
+                    </div> -->
+                    <div class="formheader">
+                        <span class="title">Login</span>
+                    </div>
+                    <form action="#">
+                        
+                        <div class="input-field email">
+                            <input type="text" id="log-email" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope icon"></i>
+                            <label class="log-error-msg-email" id="log-error-email"></label>
+                        </div>
+                        <label class="log-error-msg-email" id="log-error-email"></label>
+                        <div class="input-field">
+                            <input type="password" id="log-pass" class="password" placeholder="Enter masterpassword" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                            <label class="log-error-msg-password" id="log-error-password"></label>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Remember me</label>
+                            </div>
+                            
+                            <a href="pages/forgotpass.html" class="text">Forgot password?</a>
+                        </div>  
+
+                        <div class="input-field button"> 
+                            <input type="button" id="mainlogin" value="Login">
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Signup Now</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Registration Form -->
+                <div class="form signup">
+                    <div class="regTitle">
+                    <span class="title">Registration</span>
+                    <label class="reg-error-msg" id="reg-error"></label>
+                </div>
+                    
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" id="reg-name" placeholder="Enter your name" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text"id="reg-email"  placeholder="Enter your email" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="reg-pass" class="password" placeholder="Create masterpassword" required>
+                            <i class="uil uil-lock icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="reg-cpass" class="password" placeholder="Confirm masterpassword" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+                        <div class="input-field button">
+                            <input type="button" id="Signup" value="Signup">
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">Already a member?
+                            <a href="#" class="text login-link">Login Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtoLanding">
+        <span><a href="./index.html">Back to website</a></span>
+    </div>
+    
+    <script src="functions.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+    <script src="main.js"> </script>
+    
+  </body>
+</html>
+

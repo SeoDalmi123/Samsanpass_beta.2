@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: rgb(73, 73, 73);
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
